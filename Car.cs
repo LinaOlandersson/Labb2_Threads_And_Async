@@ -10,9 +10,6 @@
         public Car(string name)
         {
             Name = name;
-            Distance = Distance;
-            Speed = Speed;
-            MadeDistance = MadeDistance;
         }
 
         public static async Task<string> Race(Car car)
@@ -42,7 +39,7 @@
         public static async Task RandomAccident(Car car)
         {
             Random random = new Random();
-            int rnd = random.Next(1, 50);
+            int rnd = random.Next(1, 51);
 
             if (rnd == 1)
             {
